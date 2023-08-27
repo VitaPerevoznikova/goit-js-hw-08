@@ -6,7 +6,7 @@ const CURRENT_TIME_KEY = 'videoplayer-current-time';
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 
-const getCurrentTime = function (currentTime) {
+const getCurrentTime = function(currentTime) {
   const seconds = currentTime.seconds;
   localStorage.setItem(CURRENT_TIME_KEY, JSON.stringify(seconds));
 };
